@@ -41,10 +41,10 @@
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="nav-links" id="navLinks">
       <a href="#"><img src="https://img.icons8.com/?size=20&id=v2LNL7ofGkrB&format=png&color=ffffff">Home</a>
-      <a href="#"><img src="https://img.icons8.com/?size=20&id=dbEL2NLmlcac&format=png&color=ffffff">About</a>
-      <a href="#"><img src="https://img.icons8.com/?size=20&id=JRw1PDmL8TAP&format=png&color=ffffff">Elevators</a>
-      <a href="#"><img src="https://img.icons8.com/?size=20&id=60006&format=png&color=ffffff">Services</a>
-      <a href="#"><img src="https://img.icons8.com/?size=20&id=85491&format=png&color=ffffff">Contact</a>
+      <a href="#about"><img src="https://img.icons8.com/?size=20&id=dbEL2NLmlcac&format=png&color=ffffff">About</a>
+      <a href="#elevators"><img src="https://img.icons8.com/?size=20&id=JRw1PDmL8TAP&format=png&color=ffffff">Elevators</a>
+      <a href="#services"><img src="https://img.icons8.com/?size=20&id=60006&format=png&color=ffffff">Services</a>
+      <a href="#contact"><img src="https://img.icons8.com/?size=20&id=85491&format=png&color=ffffff">Contact</a>
     </div>
   </nav>
 
@@ -96,7 +96,7 @@
     </div>
   </section>
 
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="about-container">
         
         <!-- Left Image with Red Box Overlay -->
@@ -159,7 +159,7 @@
           <option>More than 3 Months</option>
         </select>
 
-        <div class="input-group">
+        <div class="input-group" id="contact">
           <i class="fas fa-user"></i>
           <input type="text" placeholder="Name" required />
         </div>
@@ -221,7 +221,7 @@
   </section>
 
 
-   <section class="designs-section">
+   <section class="designs-section" id="elevators">
     <h1>Take a Sneak Peek at <span>Our Designs</span></h1>
 
     <div class="tabs">
@@ -264,7 +264,7 @@
     </div>
   </section>
 
-  <section class="capabilities-section">
+  <section class="capabilities-section" id="services">
     <h1 class="cap">Our <span class="highlight">Capabilities</span> & Service <span class="highlight">Promise</span></h1>
     <p class="subtitle">More Than Elevators. We Deliver Peace of Mind.</p>
 
@@ -427,3 +427,4 @@ function changeTab(tab) {
   </script>
 
 </html>
+
