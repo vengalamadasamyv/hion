@@ -170,7 +170,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 40px;
-  background: linear-gradient(to right, #000 44%, transparent), url('/assets/img/OIP.webp');
+  background: linear-gradient(to right, #000 44%, transparent), url('../img/OIP.webp');
   background-size: cover;
   min-height: 90vh;
   /* background-image: url("/assets/img/OIP.webp"); */
@@ -919,4 +919,5 @@ form input {
     .about-content H2{
       font-size: 32PX;
     }
+
 }
