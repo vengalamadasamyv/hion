@@ -40,11 +40,11 @@
     <div class="logo"><img src="./assets/img/lo2.png">Hion<br>Elevators</div>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="nav-links" id="navLinks">
-      <a href="#"><img src="https://img.icons8.com/?size=20&id=v2LNL7ofGkrB&format=png&color=ffffff">Home</a>
-      <a href="#about"><img src="https://img.icons8.com/?size=20&id=dbEL2NLmlcac&format=png&color=ffffff">About</a>
-      <a href="#elevators"><img src="https://img.icons8.com/?size=20&id=JRw1PDmL8TAP&format=png&color=ffffff">Elevators</a>
-      <a href="#services"><img src="https://img.icons8.com/?size=20&id=60006&format=png&color=ffffff">Services</a>
-      <a href="#contact"><img src="https://img.icons8.com/?size=20&id=85491&format=png&color=ffffff">Contact</a>
+      <a href="#" class="nava"><img src="https://img.icons8.com/?size=20&id=v2LNL7ofGkrB&format=png&color=ffffff">Home</a>
+      <a href="#about" class="nava"><img src="https://img.icons8.com/?size=20&id=dbEL2NLmlcac&format=png&color=ffffff">About</a>
+      <a href="#elevators" class="nava"><img src="https://img.icons8.com/?size=20&id=JRw1PDmL8TAP&format=png&color=ffffff">Elevators</a>
+      <a href="#services" class="nava"><img src="https://img.icons8.com/?size=20&id=60006&format=png&color=ffffff">Services</a>
+      <a href="#contact" class="nava"><img src="https://img.icons8.com/?size=20&id=85491&format=png&color=ffffff">Contact</a>
     </div>
   </nav>
 
@@ -428,7 +428,7 @@ function changeTab(tab) {
 
 <script>
   // Hide navbar when any nav-link is clicked
-  document.querySelectorAll('.nav-link').forEach(link => {
+  document.querySelectorAll('.nava').forEach(link => {
     link.addEventListener('click', function () {
       document.getElementById('navLinks').style.display = 'none';
     });
@@ -437,5 +437,6 @@ function changeTab(tab) {
 
 
 </html>
+
 
 
