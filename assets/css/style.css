@@ -9,6 +9,11 @@
       background-color: #f5f5f5;
     }
 
+   html {
+     scroll-behavior: smooth;
+   }
+
+
     /* NAVIGATION STYLES */
         nav {
       width: 100%;
@@ -922,5 +927,6 @@ form input {
     }
 
 }
+
 
 
