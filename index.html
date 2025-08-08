@@ -426,5 +426,16 @@ function changeTab(tab) {
 
   </script>
 
+<script>
+  // Hide navbar when any nav-link is clicked
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function () {
+      document.getElementById('navLinks').style.display = 'none';
+    });
+  });
+</script>
+
+
 </html>
+
 
