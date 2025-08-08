@@ -430,13 +430,23 @@ function changeTab(tab) {
   // Hide navbar when any nav-link is clicked
   document.querySelectorAll('.nava').forEach(link => {
     link.addEventListener('click', function () {
-      document.getElementById('navLinks').style.display = 'none';
+      const navbar = document.getElementById('navLinks');
+
+      // Hide the navbar
+      navbar.style.display = 'none';
+
+      // Show it again after 2 seconds (2000 milliseconds)
+      setTimeout(() => {
+        navbar.style.display = 'unset'; // or 'block' depending on your layout
+      }, 2000); // 2 seconds
     });
   });
 </script>
 
 
+
 </html>
+
 
 
 
