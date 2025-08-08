@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hion Elevators</title>
+    <link rel="icon" type="image/png" href="./assets/img/lo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        // SEO titles to rotate
+    const titles = [
+      "Hion Elevators – Trusted Elevator Company",
+      "Top Rated Elevator Company in India | Hion Elevators",
+      "Residential & Commercial Elevators | Hion Elevators",
+      "Custom Lift Solutions – Hion Elevators, India's Top Brand"
+    ];
+
+    let index = 0;
+
+    // Change title every 3000 seconds (3000000 milliseconds)
+    setInterval(() => {
+      index = (index + 1) % titles.length;
+      document.title = titles[index];
+    }, 2200); 
+  </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- bootstrap link -->
+
+    <!-- css style link -->
+     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- gsap animate link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- nav bar starts here -->
+  <nav>
+    <div class="logo"><img src="./assets/img/lo2.png">Hion<br>Elevators</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#"><img src="https://img.icons8.com/?size=20&id=v2LNL7ofGkrB&format=png&color=ffffff">Home</a>
+      <a href="#"><img src="https://img.icons8.com/?size=20&id=dbEL2NLmlcac&format=png&color=ffffff">About</a>
+      <a href="#"><img src="https://img.icons8.com/?size=20&id=JRw1PDmL8TAP&format=png&color=ffffff">Elevators</a>
+      <a href="#"><img src="https://img.icons8.com/?size=20&id=60006&format=png&color=ffffff">Services</a>
+      <a href="#"><img src="https://img.icons8.com/?size=20&id=85491&format=png&color=ffffff">Contact</a>
+    </div>
+  </nav>
+
+  <!-- <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Professional Elevators Logo">
+        <span>Professional Elevators</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Why Choose Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Our Works</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Promise</a></li>
+      </ul>
+      <a href="#" class="btn-red">Let's Talk</a>
+    </div>
+  </header> -->
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="subtitle">Home Lifts & Passenger Elevators</p>
+      <h1><strong>Smart, Stylish</strong><br>and <span>Affordable</span></h1><br>
+      <a href="#" class="btn-red">Request Free Quote</a>
+    </div>
+    <div class="hero-image">
+      <!-- <img src="./assets/img/OIP.webp" alt="Woman near Elevator"> -->
+    </div>
+  </section>
+
+    <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-box">
+        <div class="number" data-target="25">0</div>
+        <div class="underline"></div>
+        <p>Years of Industry Experience</p>
+      </div>
+      <div class="stat-box">
+        <div class="number" data-target="3500">0</div>
+        <div class="underline"></div>
+        <p>Installations Across South India</p>
+      </div>
+      <div class="stat-box">
+        <div class="number" data-target="24">0<span class="slash">/</span>7</div>
+        <div class="underline"></div>
+        <p>Local Support Network</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-container">
+        
+        <!-- Left Image with Red Box Overlay -->
+        <div class="about-image">
+            <img src="./assets/img/about.webp" alt="Elevator Interior">
+            <div class="red-box">
+                <h3>Designing,<br>Manufacturing,<br>Installing,<br>Maintaining</h3>
+            </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+            <h2><span class="highlight">About</span> Hion Elevators</h2>
+            <p>
+                Founded in 1999, Professional Elevators Pvt. Ltd. is a leading name in South India’s elevator industry. 
+                We specialise in designing, manufacturing, installing, and maintaining a wide range of vertical mobility 
+                solutions — from passenger and home elevators to hospital, goods, and automobile lifts.
+            </p>
+            <p>
+                With over 25 years of engineering excellence, we combine modern technology with rigorous safety standards 
+                to deliver elevators that are efficient, reliable, and built to last. Our ISO 9001:2015 certification reflects 
+                our unwavering commitment to quality, customer satisfaction, and compliance with global benchmarks.
+            </p>
+            <p>
+                Supported by a strong regional network and a team of trained, experienced professionals, we offer seamless 
+                service across Tamil Nadu, Karnataka, Kerala, and Puducherry.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="contact-section">
+    <div class="contact-left">
+      <h2>Ready to start a <span>project</span> with us?</h2>
+      <img src="/assets/img/lift1.webp" alt="Elevator Image" />
+    </div>
+
+    <div class="contact-right">
+      <form>
+        <label>Type of Lift Required</label>
+        <select>
+          <option>Home Elevator</option>
+          <option>Commercial Elevator</option>
+          <option>Hospital Elevator</option>
+        </select>
+
+        <label>Property Type</label>
+        <select>
+          <option>Individual House</option>
+          <option>Apartment</option>
+          <option>Commercial Building</option>
+        </select>
+
+        <label>Timeline for Installation</label>
+        <select>
+          <option>Within 1 Month</option>
+          <option>1-3 Months</option>
+          <option>More than 3 Months</option>
+        </select>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Name" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-phone-alt"></i>
+          <input type="tel" placeholder="Phone" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email Address" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-info-circle"></i>
+          <input type="text" placeholder="City" required />
+        </div>
+
+        <button type="submit" class="send-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="why-elevators">
+    <div class="content-wrapper">
+      <div class="left">
+        <h1>
+          Why <span>Hion Elevators</span>
+        </h1>
+        <div class="feature fade-in">
+          <h2>Efficiency</h2>
+          <p>
+            Smart Elevators Built for Energy Efficiency and Low Power Usage — Sustainability at Every Level.
+          </p>
+        </div>
+
+        <div class="feature fade-in" style="animation-delay: 0.3s">
+          <h2>Minimal Civil Work</h2>
+          <p>
+            Eliminates the Need for a Pit or Machine Room, Making Installation Quicker, Simpler, and Ideal for Retrofitting in Existing Structures.
+          </p>
+        </div>
+
+        <div class="feature fade-in" style="animation-delay: 0.6s">
+          <h2>Customizable</h2>
+          <p>
+            Custom-Built Elevator Cabins with Luxurious Finishes — Where Innovation Meets Elegance
+          </p>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="/assets/img/home.png" alt="Elevator Illustration" />
+      </div>
+    </div>
+  </section>
+
+
+   <section class="designs-section">
+    <h1>Take a Sneak Peek at <span>Our Designs</span></h1>
+
+    <div class="tabs">
+      <button class="tab active" onclick="changeTab('cabin')">Cabin Finish</button>
+      <button class="tab" onclick="changeTab('doors')">Doors</button>
+    </div>
+
+    <div class="carousel-container">
+      <!-- <button class="nav-btn prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i></button> -->
+
+      <div class="carousel" id="carousel">
+        <div class="slide">
+          <img src="./assets/img/rose.webp" alt="Rose Gold Door" />
+          <p>Rose Gold Center Opening Auto Door</p>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/silver.jpg" alt="Silver Door" />
+          <p>Center Opening Auto Door (Big)</p>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/rose.webp" alt="Rose Gold Door" />
+          <p>Rose Gold Center Opening Auto Door</p>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/silver.jpg" alt="Silver Door" />
+          <p>Center Opening Auto Door (Big)</p>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/rose.webp" alt="Rose Gold Door" />
+          <p>Rose Gold Center Opening Auto Door</p>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/silver.jpg" alt="Silver Door" />
+          <p>Center Opening Auto Door (Big)</p>
+        </div>
+        <!-- Add more slides if needed -->
+      </div>
+
+      <!-- <button class="nav-btn next" onclick="nextSlide()"><i class="fas fa-arrow-right"></i></button> -->
+    </div>
+  </section>
+
+  <section class="capabilities-section">
+    <h1 class="cap">Our <span class="highlight">Capabilities</span> & Service <span class="highlight">Promise</span></h1>
+    <p class="subtitle">More Than Elevators. We Deliver Peace of Mind.</p>
+
+    <div class="capabilities-grid">
+        <div class="capability-card">
+            <div class="icon">💡</div>
+            <h3>End-to-End Solutions</h3>
+            <p>From design & manufacturing to installation & AMC under one roof.</p>
+        </div>
+        <div class="capability-card">
+            <div class="icon">👷‍♂️</div>
+            <h3>Expert Installation Teams</h3>
+            <p>Trained professionals with hands-on experience across varied sites and building types.</p>
+        </div>
+        <div class="capability-card">
+            <div class="icon">⏱️</div>
+            <h3>On-Time Delivery</h3>
+            <p>Strict project timelines and quick turnarounds, even in retrofit environments.</p>
+        </div>
+        <div class="capability-card">
+            <div class="icon">📞</div>
+            <h3>24/7 Regional Support</h3>
+            <p>Service centres across South India ensure fast resolution and spare part availability.</p>
+        </div>
+        <div class="capability-card">
+            <div class="icon">🛡️</div>
+            <h3>Safety & Compliance</h3>
+            <p>All elevators are built to meet ISO 9001:2015 and BIS standards with strict quality control.</p>
+        </div>
+        <div class="capability-card">
+            <div class="icon">📈</div>
+            <h3>Scalable for All Projects</h3>
+            <p>From homes and villas to multi-unit residential and small commercial buildings.</p>
+        </div>
+    </div>
+</section>
+
+
+   <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="foo">
+        <img src="./assets/img/lo2.png" alt="Professional Elevators Logo" class="logo" />
+        </div>
+        <h2>Hion Elevators</h2>
+        <h3>Location :</h3>
+        <p>
+          #142, Maasilamaneeswarar Nagar,<BR>
+          Thirumullaivoyal, Chennai - 600 062.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> hionelevators@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +91-8056501997, +91-9543043736</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<!-- nav script starts here -->
+  <script>
+    const navLinks = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links a');
+
+    function toggleMenu() {
+      navLinks.classList.toggle('show');
+      if(navLinks.classList.contains('show')) {
+        gsap.fromTo(links, 
+          { opacity: 0, y: -20 }, 
+          { opacity: 1, y: 0, stagger: 0.1, duration: 0.5, ease: "power2.out" }
+        );
+      }
+    }
+
+    // Page load animation
+    // gsap.from("nav", { y: -100, opacity: 0, duration: 1, ease: "bounce.out" });
+    // gsap.from(".logo", { opacity: 0, x: -100, duration: 1 });
+    gsap.from(".nav-links a", { opacity: 0, x: 100, duration: 1, stagger: 0.1, delay: 0.5 });
+    gsap.from(".logo", { opacity: 0, x: -100, duration: 1, stagger: 0.9, delay: 0.5 });
+    gsap.from(".hamburger", { opacity: 0, x: 100, duration: 1, stagger: 0.1, delay: 0.5 });
+
+
+  </script>
+
+  <script>
+    const counters = document.querySelectorAll(".number");
+
+let started = false;
+
+function animateCounters() {
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const current = +counter.innerText.replace(/\D/g, '');
+
+      const increment = Math.ceil(target / 100); // adjust speed
+
+      if (current < target) {
+        counter.innerHTML = current + increment + (counter.innerText.includes('+') ? '+' : '');
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerHTML = target + (counter.innerText.includes('+') ? '+' : '');
+      }
+    };
+
+    updateCount();
+  });
+}
+
+function checkScroll() {
+  const section = document.querySelector(".stats-section");
+  const sectionTop = section.getBoundingClientRect().top;
+
+  if (!started && sectionTop < window.innerHeight - 100) {
+    animateCounters();
+    started = true;
+  }
+}
+
+window.addEventListener("scroll", checkScroll);
+
+  </script>
+
+  <script>
+    let index = 0;
+
+function nextSlide() {
+  const carousel = document.getElementById("carousel");
+  const slides = document.querySelectorAll(".slide");
+  index = (index + 1) % slides.length;
+  carousel.style.transform = `translateX(-${index * 340}px)`;
+}
+
+function prevSlide() {
+  const carousel = document.getElementById("carousel");
+  const slides = document.querySelectorAll(".slide");
+  index = (index - 1 + slides.length) % slides.length;
+  carousel.style.transform = `translateX(-${index * 340}px)`;
+}
+
+function changeTab(tab) {
+  const tabs = document.querySelectorAll(".tab");
+  tabs.forEach(t => t.classList.remove("active"));
+  event.target.classList.add("active");
+
+  // Optional: Replace carousel content based on tab
+  // Currently just styles the tabs
+}
+
+  </script>
+</html>
